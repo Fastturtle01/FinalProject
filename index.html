@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Chat bot1</title>
+    <link rel="stylesheet" href="style.css">
+	<h1>Test API</h1>
+	<input type="text"
+		id="chat-input"
+		autocomplete="on"
+		placeholder="Type"
+		required/>
+</head>
+<body>
+	<button type="submit" onclick="getScore()">Send</button>
+	<p id="First-paragraph"></p>
+
+	<img alt="" id="imgsrc">
+	<div class = "summary"></div>
+	<div class="gaugeAvg">
+		<div class="gauge__body">
+		  <div class="gauge__fill"></div>
+		  <div class="gauge__cover" id="gauge__cover"></div>
+		</div>
+		<p>Total Score</p>
+	</div>
+
+	<div class="gauge">
+		<div class="gauge__body">
+			<div class="gauge__fill1"></div>
+			<div class="gauge__cover1" id="gauge__cover"></div>
+		  </div>
+		  <p>Cost of living</p>
+		  <div class="gauge__body" href = "">
+			<div class="gauge__fill2"></div>
+			<div class="gauge__cover2" id="gauge__cover"></div>
+		  </div>
+		  <p>Safety</p>
+		  <div class="gauge__body">
+			<div class="gauge__fill3"></div>
+			<div class="gauge__cover3" id="gauge__cover"></div>
+		  </div>
+		  <p>Health care</p>
+		  <div class="gauge__body">
+			<div class="gauge__fill4"></div>
+			<div class="gauge__cover4" id="gauge__cover"></div>
+		  </div>
+		  <p>Environmental Quality</p>
+	</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
