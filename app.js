@@ -8,13 +8,6 @@ async function getScore(){
 	const api3 = "/images/";
 	const response = await fetch(api1+city+api2);
 	const image = await fetch(api1+city+api3);
-	// if (await fetch(api1+city+api2) && await fetch(api1+city+api3)){
-	// 	response = await fetch(api1+city+api2);
-	// 	const images = await fetch(api1+city+api3);
-	// }
-	// else{
-	// 	document.getElementById("First-paragraph").textContent = "Error, please try again";
-	// }
 	const gaugeElement = document.querySelector(".gauge");
 	const gaugeElementAvg = document.querySelector(".gaugeAvg");
 	const data = await response.json();
@@ -27,7 +20,7 @@ async function getScore(){
 	document.getElementById("imgsrc").src = images.photos[0].image.mobile;
 	setGaugeValue(gaugeElement,gaugeElementAvg,score/100,categories[1].score_out_of_10,categories[7].score_out_of_10,categories[8].score_out_of_10,categories[9].score_out_of_10,categories[10].score_out_of_10,categories);
 	document.querySelector(".summary").innerHTML = data.summary;
-	console.log(data.categories)
+	console.log(data.summary)
 	// console.log(images);
 }
 
