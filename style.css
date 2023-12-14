@@ -11,12 +11,12 @@ body {
 }
 
 .summary {
-    margin-left: 30%;
     padding: 20px;
     border-radius: 10px;
     box-sizing: border-box;
     max-width: 70%;
     text-align: center;
+	align-items: center;
 }
 
 .container {
@@ -56,6 +56,7 @@ button {
     border-radius: 5px 5px 5px 5px;
     cursor: pointer;
     outline: none;
+	margin-top: 10px;
 }
 
 p {
@@ -78,7 +79,7 @@ p1 {
     max-width: 100%; /* Set maximum width to the container width */
     border-radius: 10px; /* Rounded corners */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    display: inline-block; /* Make the box inline-block to size it based on content */
+    display: inherit; /* Make the box inline-block to size it based on content */
 }
 
 .bold-text {
