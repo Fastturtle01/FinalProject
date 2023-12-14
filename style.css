@@ -7,118 +7,151 @@ body {
     text-align: center;
     padding: 20px;
     position: relative;
-    background: url('https://media.giphy.com/media/EZXjZ8BOlFMWI/giphy.gif') center/cover no-repeat; /* Set the background to the homepage GIF */
+    background: url('https://media.giphy.com/media/EZXjZ8BOlFMWI/giphy.gif') center/cover no-repeat;
+    /* Set the background to the homepage GIF */
+}
+
+.container {
+    max-width: 800px;
+    /* Set a maximum width for better content organization */
+    margin: 0 auto;
+    /* Center the container horizontally */
+}
+
+h1 {
+    font-family: 'Consola Mono', sans-serif;
+    color: #ff7f50;
+    /* Coral color for heading */
+    margin-bottom: 20px;
+}
+
+#chat-input {
+    padding: 10px;
+    width: 40%;
+    /* Adjust the width for better responsiveness */
+    border: 1px solid #87ceeb;
+    /* Sky Blue border */
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    background-color: #fff8dc;
+    /* Cream background for text input */
+}
+
+button {
+    font-family: 'Consola Mono', sans-serif;
+    padding: 10px 20px;
+    width: 10%;
+    /* Adjust the width for better responsiveness */
+    background-color: #ff7f50;
+    /* Coral color for button */
+    color: #fff;
+    /* White text color */
+    border: 1px solid #ff7f50;
+    /* Coral border */
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 10px;
+}
+
+p {
+    margin-left: 30%;
+    margin-right: 30%;
+    color: #696969;
+    /* Dim Gray text color */
+    background-color: #fff8dc;
+    /* Cream background for regular text */
+    padding: 15px;
+    /* Add padding for better visibility */
+    max-width: 50%;
+    /* Set maximum width to the container width */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+    text-align: center;
+    display: block;
+    /* Make the box inline-block to size it based on content */
+}
+
+p1 {
+    margin-bottom: 20px;
+    color: #696969;
+    /* Dim Gray text color */
+    background-color: #fff8dc;
+    /* Cream background for regular text */
+    padding: 15px;
+    /* Add padding for better visibility */
+    max-width: 100%;
+    /* Set maximum width to the container width */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+    display: inherit;
+    /* Make the box inline-block to size it based on content */
 }
 
 .summary {
     padding: 20px;
     border-radius: 10px;
     box-sizing: border-box;
-    max-width: 70%;
+    max-width: auto;
     text-align: center;
-	align-items: center;
-}
-
-.container {
-    max-width: 800px; /* Set a maximum width for better content organization */
-    margin: 0 auto; /* Center the container horizontally */
-}
-
-h1 {
-    font-family: 'Consola Mono', sans-serif;
-    color: #ff7f50; /* Coral color for heading */
-    margin-bottom: 20px;
-}
-
-.input-container {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
-}
-
-#chat-input {
-    padding: 10px;
-    width: 40%; /* Adjust the width for better responsiveness */
-    border: 1px solid #87ceeb; /* Sky Blue border */
-    border-radius: 5px 0 0 5px;
-    outline: none;
-    background-color: #fff8dc; /* Cream background for text input */
-}
-
-button {
-    font-family: 'Consola Mono', sans-serif;
-    padding: 10px 20px;
-    width: 10%; /* Adjust the width for better responsiveness */
-    background-color: #ff7f50; /* Coral color for button */
-    color: #fff; /* White text color */
-    border: 1px solid #ff7f50; /* Coral border */
-    border-radius: 5px 5px 5px 5px;
-    cursor: pointer;
-    outline: none;
-	margin-top: 10px;
-}
-
-p {
-    margin: 20px;
-    color: #696969; /* Dim Gray text color */
-    background-color: #fff8dc; /* Cream background for regular text */
-    padding: 15px; /* Add padding for better visibility */
-    max-width: 50%; /* Set maximum width to the container width */
-    border-radius: 10px; /* Rounded corners */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-	text-align: center;
-    display: block; /* Make the box inline-block to size it based on content */
-}
-
-p1 {
-    margin-bottom: 20px;
-    color: #696969; /* Dim Gray text color */
-    background-color: #fff8dc; /* Cream background for regular text */
-    padding: 15px; /* Add padding for better visibility */
-    max-width: 100%; /* Set maximum width to the container width */
-    border-radius: 10px; /* Rounded corners */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    display: inherit; /* Make the box inline-block to size it based on content */
 }
 
 .bold-text {
     font-weight: bold;
-    background-color: #ffebcd; /* PeachPuff background for bold text */
-    padding: 8px; /* Adjust padding for better visibility */
-    border-radius: 8px; /* Rounded corners */
-    display: inline-block; /* Make the box inline-block to size it based on content */
+    background-color: #ffebcd;
+    /* PeachPuff background for bold text */
+    padding: 8px;
+    /* Adjust padding for better visibility */
+    border-radius: 8px;
+    /* Rounded corners */
+    display: inline-block;
+    /* Make the box inline-block to size it based on content */
 }
 
 img {
-    max-width: 500px; /* Set image width to 100% of the container */
+    max-width: 500px;
+    /* Set image width to 100% of the container */
     height: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    display: inline-block;
 }
 
 .image-container {
-    background-color: #ff7f50; /* AliceBlue background for image container */
-    border-radius: 15px; /* Rounded corners */
-    overflow: hidden; /* Hide overflow content */
-    display: inline-block; /* Make the box inline-block to size it based on content */
+    background-color: #ff7f50;
+    /* AliceBlue background for image container */
+    border-radius: 15px;
+    /* Rounded corners */
+    overflow: hidden;
+    /* Hide overflow content */
+    display: inline-block;
+    /* Make the box inline-block to size it based on content */
 }
 
 /* Styling for the gauge elements */
 .gaugeAvg, .gauge {
-    width: 100%; /* Adjust the width for better responsiveness */
+    width: 100%;
+    /* Adjust the width for better responsiveness */
     max-width: 270px;
     font-family: "Consola Mono", sans-serif;
     font-size: 24px;
-    color: #008080; /* Teal color for gauge text */
-    margin: 10px 0; /* Add margin for better spacing */
+    color: #008080;
+    /* Teal color for gauge text */
+    margin: 10px 0;
+    /* Add margin for better spacing */
 }
 
 .gauge__body {
     width: 100%;
     height: 0;
     padding-bottom: 50%;
-    background: #ffd700; /* Gold background for gauge */
+    background: #ffd700;
+    /* Gold background for gauge */
     position: relative;
     border-top-left-radius: 100% 200%;
     border-top-right-radius: 100% 200%;
@@ -127,23 +160,35 @@ img {
 }
 
 /* Adjusted colors for the gauge fill */
-.gauge__fill, .gauge__fill1, .gauge__fill2, .gauge__fill3, .gauge__fill4, .gauge__fill5 {
+.gauge__fill,
+.gauge__fill1,
+.gauge__fill2,
+.gauge__fill3,
+.gauge__fill4,
+.gauge__fill5 {
     position: absolute;
     top: 100%;
     left: 0;
     width: inherit;
     height: 100%;
-    background: #ff6347; /* Tomato color for gauge fill */
+    background: #ff6347;
+    /* Tomato color for gauge fill */
     transform-origin: center top;
     transform: rotate(0turn);
     transition: transform 0.2s ease-out;
 }
 
 /* Adjusted colors for the gauge cover */
-.gauge__cover, .gauge__cover1, .gauge__cover2, .gauge__cover3, .gauge__cover4, .gauge__cover5 {
+.gauge__cover,
+.gauge__cover1,
+.gauge__cover2,
+.gauge__cover3,
+.gauge__cover4,
+.gauge__cover5 {
     width: 75%;
     height: 150%;
-    background: #f0e68c; /* Khaki color for gauge cover */
+    background: #f0e68c;
+    /* Khaki color for gauge cover */
     border-radius: 50%;
     position: absolute;
     top: 25%;
@@ -163,27 +208,11 @@ img {
     /* Add additional src lines for other font formats if applicable */
     font-weight: normal;
     font-style: normal;
-
 }
+
 @font-face {
     font-family: 'Small Consola';
     src: url('/Users/aomlettes/Documents/Comprog/final/consola_mono/ConsolaMono-Book.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
-
-/* Styles specific to the feature page */
-.feature-page {
-    background: url('https://media.giphy.com/media/13mtYtQmh8jSEM/giphy.gif') center/cover no-repeat; /* Set the background to the feature page GIF */
-}
-
-/* Additional styles for the feature page if needed */
-.feature-page h1 {
-    color: #4b0082; /* Indigo color for heading on the feature page */
-}
-
-.feature-page p {
-    background-color: #e6e6fa; /* Lavender */
-    border-radius: 10px; /* Rounded corners */
-    display: inline-block; /* Make the box inline-block to size it based on content */
 }
