@@ -55,22 +55,22 @@ button {
 }
 
 p {
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: auto;
+    margin-right: auto;
     color: #696969;
     /* Dim Gray text color */
     background-color: #fff8dc;
     /* Cream background for regular text */
     padding: 15px;
     /* Add padding for better visibility */
-    max-width: 50%;
+    max-width: 80%;
     /* Set maximum width to the container width */
     border-radius: 10px;
     /* Rounded corners */
     box-sizing: border-box;
     /* Include padding and border in the element's total width and height */
     text-align: center;
-    display: block;
+    display: inline-block;
     /* Make the box inline-block to size it based on content */
 }
 
@@ -88,7 +88,7 @@ p1 {
     /* Rounded corners */
     box-sizing: border-box;
     /* Include padding and border in the element's total width and height */
-    display: inherit;
+    display: inline-block;
     /* Make the box inline-block to size it based on content */
 }
 
